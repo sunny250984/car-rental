@@ -1,0 +1,145 @@
+:root {
+  --primaryColor: #7a63f1;
+  --secondaryColor: #ebe8fc;
+  --textColor: #a3a3a3;
+  --greyColor: #f4f4f4;
+  --whiteColor: #f5f4fa;
+  --blackColor: #434344;
+}
+
+.auctions .secContainer .secHeading {
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.auctions .secContainer .secHeading .navBtns {
+  gap: 0.5rem;
+}
+.auctions .secContainer .secHeading .navBtns .icon {
+  padding: 3px 5px;
+  background: var(--secondaryColor);
+  border-radius: 3px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.auctions .secContainer .secHeading .navBtns .icon:hover {
+  background: var(--primaryColor);
+  color: var(--whiteColor);
+}
+.auctions .secContainer .carsContainer {
+  gap: 1rem;
+}
+.auctions .secContainer .carsContainer .singleCar {
+  transition: 0.3s ease-in-out;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.auctions .secContainer .carsContainer .singleCar .ImgDiv {
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 5px solid transparent;
+}
+.auctions .secContainer .carsContainer .singleCar .ImgDiv img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.auctions .secContainer .carsContainer .singleCar .carTitle {
+  color: var(--blackColor);
+  font-size: 16px;
+}
+.auctions .secContainer .carsContainer .singleCar .miles {
+  color: var(--blackColor);
+  opacity: 0.7;
+  font-size: 14px;
+}
+.auctions .secContainer .carsContainer .singleCar .AWD {
+  padding: 1rem 0;
+  color: var(--blackColor);
+  font-weight: 600;
+  font-size: 15px;
+}
+.auctions .secContainer .carsContainer .singleCar .price_buyBtn {
+  gap: 1rem;
+}
+.auctions .secContainer .carsContainer .singleCar .price_buyBtn span {
+  border: 1px solid transparent;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  font-weight: 600;
+}
+.auctions .secContainer .carsContainer .singleCar .price_buyBtn .price {
+  background: var(--secondaryColor);
+  color: var(--primaryColor);
+  font-weight: 700;
+}
+.auctions .secContainer .carsContainer .singleCar .price_buyBtn .buyBtn {
+  background: var(--primaryColor);
+  color: var(--whiteColor);
+  cursor: pointer;
+}
+.auctions .secContainer .carsContainer .singleCar .price_buyBtn .buyBtn:hover {
+  background: var(--secondaryColor);
+  color: var(--textColor);
+}
+.auctions .secContainer .carsContainer .singleCar:hover {
+  transform: translateY(-7px);
+  padding: 1rem;
+  background: var(--secondaryColor);
+}
+.auctions .secContainer .carsContainer .singleCar:hover .price_buyBtn span {
+  border: 1px solid var(--primaryColor);
+}
+.auctions .secContainer .carsContainer .singleCarActive {
+  padding: 1rem;
+  background: var(--secondaryColor);
+}
+.auctions .secContainer .carsContainer .singleCarActive .price_buyBtn span {
+  border: 1px solid var(--primaryColor);
+}
+
+@media screen and (min-width: 520px) {
+  .auctions .secContainer .secHeading {
+    margin-bottom: 1rem;
+  }
+  .auctions .secContainer .secHeading .secTitle {
+    font-size: 23px;
+  }
+  .auctions .secContainer .secHeading .navBtns {
+    gap: 0.5rem;
+  }
+  .auctions .secContainer .secHeading .navBtns .icon {
+    font-size: 40px;
+  }
+  .auctions .secContainer .carsContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .auctions .secContainer .carsContainer .singleCar .carTitle {
+    font-size: 18px;
+  }
+  .auctions .secContainer .carsContainer .singleCar .miles {
+    font-size: 16px;
+  }
+  .auctions .secContainer .carsContainer .singleCar .AWD {
+    font-size: 16px;
+  }
+  .auctions .secContainer .carsContainer .singleCar .price_seller span {
+    font-weight: 600;
+  }
+}
+@media screen and (min-width: 940px) {
+  .auctions .secContainer .secHeading .secTitle {
+    font-size: 28px;
+  }
+  .auctions .secContainer .secHeading .navBtns {
+    gap: 1rem;
+  }
+  .auctions .secContainer .secHeading .navBtns .icon {
+    font-size: 40px;
+  }
+  .auctions .secContainer .carsContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}/*# sourceMappingURL=Auctions.css.map */
